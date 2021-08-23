@@ -7,3 +7,7 @@
   tasks: 
          - name: Install a Package
            yum: name: httpd  state: present
+
+
+         - name: Start httpd service
+           service: name=httpd status=started
