@@ -6,6 +6,4 @@
 
   tasks: 
          - name: Install a Package
-           yum:
-             name: httpd
-             state: present
+           yum: name: httpd  state: present
