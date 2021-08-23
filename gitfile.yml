@@ -1,0 +1,10 @@
+
+---
+- hosts: localhost
+  
+
+  tasks:
+       
+
+         - name: Remove apache package
+           yum: name= httpd status=absent
