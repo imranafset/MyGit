@@ -1,0 +1,11 @@
+
+---
+- hosts: localhost
+  
+
+
+  tasks: 
+         - name: Install a Package
+           yum:
+             name: httpd
+             state: present
