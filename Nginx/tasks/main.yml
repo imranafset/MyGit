@@ -1,0 +1,11 @@
+---
+
+- name: Install nginx package
+  yum: name=nginx state=present
+  notify: restart nginx
+
+
+
+
+- name: restart nginx service
+  service: name=nginx state=started
