@@ -1,0 +1,8 @@
+
+
+---
+- hosts: localhost
+
+  tasks:   
+         - name: Create a User
+           user: name=user1 state=present

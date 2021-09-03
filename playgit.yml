@@ -6,8 +6,11 @@
 
   tasks: 
          - name: Install a Package
-           yum: name: httpd  state: present
+           yum: name=httpd  state=present
 
 
          - name: Start httpd service
-           service: name=httpd status=started
+           service: name=httpd status=restarted
+
+         - name: Copy the file for website
+           copy: src=index.html dest=/var/www/html/index.html
