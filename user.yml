@@ -6,3 +6,7 @@
   tasks:   
          - name: Create a User
            user: name=user1 state=present
+
+
+          name: Create one user
+          user: name=user2
